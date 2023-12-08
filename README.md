@@ -3,13 +3,14 @@ Reinforcement Learning package for Finance
 
 # Environment Structure:
 <p align="center">
-  <img src="Tutorials\Documents\02_FinRock.jpg">
+  <img src="Tutorials\Documents\03_FinRock.jpg">
 </p>
 
-### Install requirements
+### Install requirements:
 ```
 pip install -r requirements.txt
 pip install pygame
+pip install .
 ```
 
 ### Create sinusoid data:
@@ -17,16 +18,22 @@ pip install pygame
 python bin/create_sinusoid_data.py
 ```
 
-### Run environment:
+### Train RL (PPO) agent on discrete actions:
 ```
-python playing.py
+experiments/training_ppo_sinusoid.py
+```
+
+### Test trained agent (Change path to the saved model):
+```
+experiments/testing_ppo_sinusoid.py
 ```
 
 ### Environment Render:
 <p align="center">
-  <img src="Tutorials\Documents\02_FinRock_render.png">
+  <img src="Tutorials\Documents\03_FinRock_render.png">
 </p>
 
 ## Links to YouTube videos:
 - [Introduction to FinRock package](https://youtu.be/xU_YJB7vilA)
 - [Complete Trading Simulation Backbone](https://youtu.be/1z5geob8Yho)
+- [Training RL agent on Sinusoid data](https://youtu.be/JkA4BuYvWyE)
